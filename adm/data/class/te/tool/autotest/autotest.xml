@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AUTOTEST>
+	<GROUP TITLE="lang_autotest_xml_FilesGrTitle" DESC="lang_autotest_xml_FilesGrDesc">
+		<TEST TITLE="lang_autotest_xml_FileSystemTitle" SYSTEM_NAME="check_filesystem" DESC="lang_autotest_xml_FileSystemDesc" />
+	</GROUP>
+
+		<GROUP TITLE="lang_template_table" DESC="lang_autotest_xml_GrTemplatesDesc">
+		<TEST TITLE="lang_autotest_xml_PageTemplateTitle" SYSTEM_NAME="check_page_template" />
+		<TEST TITLE="lang_autotest_xml_TypeTemplateTitle" SYSTEM_NAME="check_template_type" />
+		<TEST TITLE="lang_autotest_xml_TemplateAreaMapTitle" SYSTEM_NAME="check_template_area_map" />
+		<TEST TITLE="lang_template_area" SYSTEM_NAME="check_template_area" />
+	</GROUP>
+
+
+	<GROUP TITLE="lang_content" DESC="lang_content">
+		<TEST TITLE="lang_autotest_xml_ContentMapTitle" SYSTEM_NAME="check_content_map" DESC="lang_autotest_xml_ContentMapDesc" />
+		<TEST TITLE="lang_autotest_xml_ContentTitle" SYSTEM_NAME="check_content" DESC="lang_autotest_xml_ContentDesc" />
+		<TEST TITLE="lang_autotest_xml_PageAreaTitle" SYSTEM_NAME="check_page_area" Desc="lang_autotest_xml_PageAreaDesc" />
+		<TEST TITLE="lang_template_area_main" SYSTEM_NAME="check_main_area" Desc="lang_autotest_xml_MainAreaDesc" />
+	</GROUP>
+
+	<GROUP TITLE="lang_autotest_xml_GrUnusableTitle" DESC="lang_autotest_xml_GrUnusableDesc">
+		<TEST TITLE="lang_autotest_xml_UnusableTemplateTitle" SYSTEM_NAME="check_unusable_template" Desc="lang_autotest_xml_UnusableTemplateDesc" />
+		<TEST TITLE="lang_autotest_xml_UnusableBlockTitle" SYSTEM_NAME="check_unusable_block" Desc="lang_autotest_xml_UnusableBlockDesc" />
+	</GROUP>
+			
+	<GROUP TITLE="lang_autotest_xml_GrSystemUpdatesTitle" DESC="lang_autotest_xml_GrSystemUpdatesDesc">
+		<TEST TITLE="lang_autotest_xml_KernelCheckTitle" SYSTEM_NAME="check_kernel" DESC="lang_autotest_xml_KernelCheckDesc" />
+		<TEST TITLE="lang_system_update" SYSTEM_NAME="check_system_update" DESC="lang_autotest_xml_SystemUpdatesDesc" />
+	</GROUP>
+
+	<TEST TITLE="lang_autotest_xml_LangConstantsTitle" SYSTEM_NAME="check_lang_constants" DESC="lang_autotest_xml_LangConstantsDesc" />
+
+	<TEST TITLE="lang_wf_workflow" SYSTEM_NAME="check_workflow" DESC="lang_autotest_xml_WorkflowDesc" />
+	
+		<TEST TITLE="lang_autotest_xml_TaxonomyTitle" SYSTEM_NAME="check_taxonomy" DESC="lang_autotest_xml_TaxonomyDesc" />
+		
+		<GROUP TITLE="lang_autotest_xml_GrMnogosearchTitle" DESC="lang_autotest_xml_GrMnogosearchDesc">
+		<TEST TITLE="lang_autotest_xml_MnogosearchDbIndexCheckTitle" SYSTEM_NAME="check_search_db_index" DESC="lang_autotest_xml_MnogosearchDbIndexCheckDesc" />
+		<TEST TITLE="lang_autotest_xml_MnogosearchDbRecordsCheckTitle" SYSTEM_NAME="check_search_db_records" DESC="lang_autotest_xml_MnogosearchDbRecordsCheckDesc" />
+		<TEST TITLE="lang_autotest_xml_MnogosearchDbSpaceCheckTitle" SYSTEM_NAME="check_search_db_space" DESC="lang_autotest_xml_MnogosearchDbSpaceCheckDesc" />
+		<TEST TITLE="lang_autotest_xml_MnogosearchSearchCgiCheckTitle" SYSTEM_NAME="check_search_cgi" DESC="lang_autotest_xml_MnogosearchSearchCgiCheckDesc" />
+	</GROUP>
+	</AUTOTEST>

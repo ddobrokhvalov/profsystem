@@ -1,0 +1,297 @@
+body.adm {
+	font-size: 14px;
+}
+
+.adm .font2 {
+   font-size: 13px;
+}
+.adm .font2 a:link, .adm .font2 a:active, .adm .font2 a:visited, .adm .font2 a:hover {
+  font-size: 13px;
+} 
+.adm .font2 a:hover {
+  font-size: 13px;
+}
+
+.adm .top_menu a:link, .adm .top_menu a:active, .adm .top_menu a:visited, .adm .top_menu a:hover {
+   font-size: 12px;
+}
+.adm .bmark-bg .bmark div {
+   font-size: 12px;
+   padding: 0px 9px 0px 10px;
+   line-height: 25px;
+/*   padding: 5px 9px 7px 10px;   */
+}
+.adm .bmark-bg-s .bmark div {
+   font-size: 12px;
+   padding: 0px 9px 0px 10px;
+   line-height: 25px;
+/*   padding: 5px 9px 7px 10px;   */
+}
+
+.adm .top_menu2 a:link, .adm .top_menu2 a:active, .adm .top_menu2 a:visited, .adm .top_menu2 a:hover {
+   font-size: 12px;
+}
+.adm .bmark2-bg .bmark div {
+   font-size: 12px;
+   padding: 0px 9px 0px 10px;
+   line-height: 25px;
+/*   padding: 5px 9px 7px 10px;  */
+}
+.adm .bmark2-bg-s .bmark div {
+   font-size: 12px;
+   padding: 0px 9px 0px 10px;
+   line-height: 25px;
+/*   padding: 5px 9px 7px 10px;    */
+}
+
+.adm .t-help {
+   padding: 13px 17px 13px 24px;
+}
+.adm .t-user {
+   padding: 13px 17px 13px 24px;
+}
+.adm .t-help, .adm .t-user {
+   font-size: 12px;
+}
+.adm .t-help a:link, .adm .t-help a:active, .adm .t-help a:visited, .adm .t-user a:link, .adm .t-user a:active, .adm .t-user a:visited {
+   font-size: 12px;
+}
+.adm .t-help a:hover, .adm .t-user a:hover {
+   font-size: 12px;
+}
+.adm .t-user span {
+   font-size: 12px;
+}
+
+.adm div.treeContainer {
+	font-size: 14px;
+}
+.adm div.treeItem {
+   font-size: 14px;
+   padding: 2px 0px 4px 2px;
+}
+.adm div.treeItemSelect {
+	font-size: 14px;
+   padding: 2px 0px 4px 2px;
+}
+.adm a.treeText {
+   font-size: 14px;
+}
+.adm a.treeTextCurrent {
+	font-size: 14px;
+}
+.adm span.treeText {
+	font-size: 14px;
+}
+.adm span.treeTextCurrent {
+	font-size: 14px;
+}
+
+      
+.adm .status_line, .adm .status_line a {
+	font-size: 12px;
+}
+.adm .status_line_help {
+	font-size: 12px;
+}
+
+.adm td div.pad div.status_line2 {
+	font-size: 12px;
+}
+.adm td div.pad div.status_line2 a:link, .adm td div.pad div.status_line2 a:active, .adm td div.pad div.status_line2 a:visited {
+   font-size: 12px;
+}
+.adm td div.pad div.status_line2 a:hover {
+   font-size: 12px;
+}
+
+.adm table.table_osn td a:link, .adm table.table_osn td a:active, .adm table.table_osn td a:visited {
+   font-size: 14px;
+}
+.adm table.table_osn td a:hover {
+   font-size: 14px;
+}
+
+.adm table.table_osn tr.th2 {
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   background: #536761 url('/common/adm/img/tabs/table_osn/bg3.gif') repeat-x 0px 100%;
+   padding: 0px 4px 0px 0px;
+   margin: 0px 0px 0px 0px;
+   text-align: left;
+}
+.adm table.table_osn caption {
+   font-size: 14px;
+}
+.adm table.table_osn .top {
+   font-size: 12px;
+}
+.adm table.table_osn .top2 {
+   font-size: 12px;
+}
+.adm table.table_osn th a:link, .adm table.table_osn th a:active, .adm table.table_osn th a:visited {
+   font-size: 12px;
+}
+.adm table.table_osn th a:hover {
+   font-size: 12px;
+}
+
+.adm table.table_osn td {
+   font-size: 12px;
+}
+.adm table.table_osn td div {
+   font-size: 12px;
+}
+.adm table.table_osn td a:link, .adm table.table_osn td a:active, .adm table.table_osn td a:visited {
+   font-size: 14px;
+}
+.adm table.table_osn td a:hover {
+   font-size: 14px;
+}
+.adm table.table_osn .t_small {
+   font-size: 12px;
+}
+.adm .normal {
+   font-size: 14px;
+}
+
+.adm div.menuMainDiv td div.menuItemDiv td {
+    padding: 2px 5px 3px 22px; 
+}
+.adm div.menuMainDiv td div.menuItemDiv td a:link,
+.adm div.menuMainDiv td div.menuItemDiv td a:active,
+.adm div.menuMainDiv td div.menuItemDiv td a:visited,
+.adm div.menuMainDiv td div.menuItemDiv td a:hover {
+    font-size: 12px; 
+}
+.adm div.menuFloatDiv td div.menuItemDiv td a:link,
+.adm div.menuFloatDiv td div.menuItemDiv td a:active,
+.adm div.menuFloatDiv td div.menuItemDiv td a:visited,
+.adm div.menuFloatDiv td div.menuItemDiv td a:hover {
+    font-size: 12px; 
+}
+
+.adm .td21 {
+	font-size: 12px;
+}
+.adm .td22 {
+	font-size: 12px;
+}
+.adm .td22 select, .adm .td22 input, .adm .td22 textarea {
+	font-size: 12px;
+}
+.adm .td22 select {
+	font-size: 12px;
+}
+.adm .td22 a:link, .adm .td22 a:active, .adm .td22 a:visited, .adm .td22 a:hover {
+   font-size: 14px;
+}
+
+.adm .block_content, .adm .block_empty, .adm .block_param, .adm .block_error {
+    font-size: 13px; 
+}
+.adm .block_map table td {
+   font-size: 13px; 
+}
+.adm .block_selected {
+   font-size: 13px; 
+}
+.adm .block_content {
+   font-size: 13px; 
+}
+.adm .block_empty {
+   font-size: 13px;
+}
+.adm .block_error {
+   font-size: 13px;
+}
+.adm .block_param {
+   font-size: 13px;
+}
+.adm .block_param .pad {
+   font-size: 13px;
+}
+.adm .block_legend {
+   font-size: 13px;
+}
+
+.adm .block_param_form div select, .adm .block_param_form div input, .adm .block_param_form div textarea {
+   font-size: 12px;
+}
+
+.adm .block_param_links .box {
+	font-size: 12px;
+}
+
+.adm .block_param_links .box div {
+   font-size: 12px;
+}
+
+.adm .box32 {
+	font-size: 13px;
+}
+.adm .box32 td.hr {
+   font-size: 13px;
+}
+.adm .export {
+	font-size: 14px;
+}
+td#rfilter select, td#rfilter .filter input {
+   font-size: 13px;
+}
+.adm .export div.import {
+   font-size: 14px;
+}
+.adm .export div.import select {
+   font-size: 13px;
+}
+.adm .export div.list {
+   font-size: 14px;
+}
+.adm .copyblock, .adm .copyblock div, .adm .copyblock td {
+   font-size: 13px;
+}
+
+.adm div, .adm span, .adm td, .adm input, .adm select {
+	font-size: 14px;
+}
+
+.adm .autotest {
+   font-size: 15px;
+}
+.adm .autotest div {
+   font-size: 15px;
+}
+.adm .autotest div div {
+   font-size: 13px;
+}
+.adm .autotest div div div {
+   font-size: 13px;
+}
+.adm .autotest .comment div .zag {
+   font-size: 13px;
+}
+.adm .autotest div .zag {
+   font-size: 15px;
+}
+.adm .autotest .comment {
+   font-size: 11px;
+}
+.adm .autotest .comment2 {
+   font-size: 11px;
+}
+
+.adm .copy {
+  font-size: 12px;
+}
+.adm .copy2 {
+  font-size: 12px;
+}
+.adm .copy2 span {
+  font-size: 12px;
+}
+.adm .copy a:link, .adm .copy a:active, .adm .copy a:visited {
+   font-size: 12px;
+}
+.adm .copy a:hover {
+   font-size: 12px;
+}

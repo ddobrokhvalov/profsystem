@@ -1,0 +1,57 @@
+HTML, BODY {
+				padding: 0px;  
+				margin: 0px; 
+				font-family: Tahoma, Arial, Helvetica, sans-serif; 
+				color: #000000 !important; 
+				font-size: 11px;
+			   background: White;
+				height: 100%;
+				}
+
+BODY * {
+		  font-family: Tahoma, Arial, Helvetica, sans-serif; 
+		  color: #000000; 
+		  float: none;
+		}
+				
+HTML, BODY, P, DIV, SPAN, A, TABLE, TH, TD {
+															font-size: 11px; 
+															text-decoration: none; 
+															color: #000000; 
+															background: White;
+															}
+
+															
+H1, H2, H3 {text-decoration: none; color: #000000;}
+P {margin: 0; padding-bottom: 10px; color: #000000;}
+A {text-decoration: underline;}
+
+
+.noprint {display: none;}
+
+
+UL {margin: 0 0 0 22px; padding: 0 0 0 5px;}
+UL LI {background: none; list-style-type: disc; margin: 2px 0 3px 0px; padding-left: 6px;}
+
+
+.table {
+			border-left: 1px solid #000000; 
+			border-bottom: 1px solid #000000; 
+			border-top: none; 
+			border-collapse:collapse; 
+			color: #000000 !important;
+			}
+.table TH {
+				border-bottom: none; 
+				border-left: none; 
+				border-top: 1px solid #000000; 
+				border-right: 1px solid #000000; 
+				padding: 4px 10px 5px 10px;
+				}
+.table TD {
+				border-top: 1px solid #000000; 
+				border-right: 1px solid #000000; 
+				padding: 4px 10px 5px 10px; 
+				border-bottom: 0; 
+				border-left: 0
+				}

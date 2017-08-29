@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./js/styles.css" rel="stylesheet">
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	    var $ = jQuery.noConflict();
+	    $(window).load(function() {
+		    $('.flexslider').flexslider({
+		    	directionNav: false,
+		    	animation: "slide",
+		    });
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div class="container header">
+				<div class="contacts" style="width: 285px;">
+					<div class="contacts__icon-address"></div>
+					<div class="contacts__text">Тверь, ул.Паши Савельевой, офис 506</div>
+				</div>
+				<div class="contacts" style="width: 260px;">
+					<div class="contacts__icon-email"></div>
+					<div class="contacts__text">email@gmail.com</div>
+				</div>
+				<div class="contacts">
+					<form class="search-form" name="search-form-top">
+						 <input type="text" class="search-form_input" name="search" placeholder="поиск...">
+						 <div class="search-form__icon-phone"></div>
+					</form>	
+				</div>
+				<div class="contacts right">
+					<div class="contacts__call">ЗАКАЗАТЬ ЗВОНОК</div>
+				</div>
+				<div class="contacts right">
+					<div class="contacts__icon-phone"></div>
+					<div class="contacts__text_c-w">8(900) 800-80-80</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="top-menu">
+			<div class="container">
+				<a href="#">
+					<div class="logo">
+						<div class="logo_text">
+							<div class="logo_head">
+							Профессиональная компания
+							</div>
+							<div class="logo_inner_text">
+							«Система»
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="nav">
+					<ul class="top-menu">
+						<li>
+							<a href="#">О производстве</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Статьи</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div id="slider" class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="./img/slider.jpg" />
+						<div class="flex-caption">
+							<h2>Производство и продажа<br>профлиста, металлочерепицы, пиролизных<br>котлов и детских площадок</h2>
+							<p>Металлочерепица — это современное архитектурное решение для обустройства надежной и долговечной кровли. Благодаря высоким эксплуатационным характеристикам материал нашел широкое применение во многих сферах строительства, например, для покрытия навесов...</p>
+							<div></div>
+							<a href="#"><div class="btn">Узнать подробнее</div></a>
+						</div>
+					</li>
+					<li>
+						<img src="./img/slider/slide1.jpg" />
+					</li>
+					<li>
+						 <img src="./img/slider/slide2.jpg" />
+					</li>
+					<li>
+						 <img src="./img/slider/slide3.jpg" />
+					</li>
+				</ul>
+			</div> 
+			<div class="slider-controls"></div>
+		</div> 
+		<div class="clear"></div>
+  	</section>
+	<section>
+		<div id="icons" class="container">
+			<a href="#" class="i-link">
+				<div class="icons">
+					<div class="i-crop">
+						<img src="./img/i-main.png" alt="" class="i-1">
+					</div>
+					<div class="icons_text">ПРОФЛИСТ</div>
+				</div>
+			</a>
+			<a href="#" class="i-link">
+				<div class="icons">
+					<div class="i-crop">
+						<img src="./img/i-main.png" alt="" class="i-2">
+					</div>
+					<div class="icons_text">МЕТАЛЛОЧЕРЕПИЦА</div>
+				</div>
+			</a>
+			<a href="#" class="i-link">
+				<div class="icons">
+					<div class="i-crop">
+						<img src="./img/i-main.png" alt="" class="i-3">
+					</div>
+					<div class="icons_text">ПИРОЛИЗНЫЕ КОТЛЫ</div>
+				</div>
+			</a>
+			<a href="#" class="i-link">
+				<div class="icons">
+					<div class="i-crop">
+						<img src="./img/i-main.png" alt="" class="i-4">
+					</div>
+					<div class="icons_text">ДЕТСКИЕ ПЛОЩАДКИ</div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<section>
+		<div id="katalog" class="container">
+			<h1 class="center">Популярные товары</h1>
+			<p class="subheader">Приемлемая стоимость металлочерепицы, легкость монтажа и функциональность<br>
+				часто являются самыми главными критериями при выборе
+			</p>
+
+			<div class="items">
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Детская площадка</div>
+					<div class="item-name">B-4000</div>
+					<div class="item-rating rating_1">
+						<div class="item-rating__star on" data_id="1" rating="1"></div>	
+						<div class="item-rating__star on" data_id="1" rating="2"></div>	
+						<div class="item-rating__star on" data_id="1" rating="3"></div>	
+						<div class="item-rating__star" data_id="1" rating="4"></div>	
+						<div class="item-rating__star" data_id="1" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="normal">100900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<div class="item-discount"></div>
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Металлочерепица</div>
+					<div class="item-name">гранд лайн</div>
+					<div class="item-rating rating_2">
+						<div class="item-rating__star on" data_id="2" rating="1"></div>	
+						<div class="item-rating__star on" data_id="2" rating="2"></div>	
+						<div class="item-rating__star" data_id="2" rating="3"></div>	
+						<div class="item-rating__star" data_id="2" rating="4"></div>	
+						<div class="item-rating__star" data_id="2" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="old">60678</span>
+						<span class="new">55900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Профлист</div>
+					<div class="item-name">Гранд лайн</div>
+					<div class="item-rating rating_3">
+						<div class="item-rating__star on" data_id="3" rating="1"></div>	
+						<div class="item-rating__star on" data_id="3" rating="2"></div>	
+						<div class="item-rating__star on" data_id="3" rating="3"></div>	
+						<div class="item-rating__star on" data_id="3" rating="4"></div>	
+						<div class="item-rating__star" data_id="3" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="normal">40900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<div class="item-discount"></div>
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Детская площадка</div>
+					<div class="item-name">Happy kids</div>
+					<div class="item-rating rating_4">
+						<div class="item-rating__star on" data_id="4" rating="1"></div>	
+						<div class="item-rating__star on" data_id="4" rating="2"></div>	
+						<div class="item-rating__star on" data_id="4" rating="3"></div>	
+						<div class="item-rating__star on" data_id="4" rating="4"></div>	
+						<div class="item-rating__star on" data_id="4" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="old">150300</span>
+						<span class="new">100900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<div class="item-discount"></div>
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Детская площадка</div>
+					<div class="item-name">Happy kids</div>
+					<div class="item-rating rating_5">
+						<div class="item-rating__star on" data_id="5" rating="1"></div>	
+						<div class="item-rating__star on" data_id="5" rating="2"></div>	
+						<div class="item-rating__star on" data_id="5" rating="3"></div>	
+						<div class="item-rating__star on" data_id="5" rating="4"></div>	
+						<div class="item-rating__star" data_id="5" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="old">150300</span>
+						<span class="new">100900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Детская площадка</div>
+					<div class="item-name">B-4000</div>
+					<div class="item-rating rating_6">
+						<div class="item-rating__star on" data_id="6" rating="1"></div>	
+						<div class="item-rating__star on" data_id="6" rating="2"></div>	
+						<div class="item-rating__star on" data_id="6" rating="3"></div>	
+						<div class="item-rating__star" data_id="6" rating="4"></div>	
+						<div class="item-rating__star" data_id="6" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="normal">100900</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<img src="./img/item1.jpg">
+						<div class="item-discount"></div>
+						<a href='#' class="item-preview"></a>
+					</div>
+					<div class="item-type">Металлочерепица</div>
+					<div class="item-name">гранд лайн</div>
+					<div class="item-rating rating_7">
+						<div class="item-rating__star on" data_id="7" rating="1"></div>	
+						<div class="item-rating__star on" data_id="7" rating="2"></div>	
+						<div class="item-rating__star on" data_id="7" rating="3"></div>	
+						<div class="item-rating__star on" data_id="7" rating="4"></div>	
+						<div class="item-rating__star" data_id="7" rating="5"></div>	
+					</div>
+					<div class="item-price">
+						<span class="old">60678</span>
+						<span class="new">55900</span>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="items-all">
+				<a href="#" class="items-all">Все товары</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="news-articles" class="container">
+			<div class="news">
+				<h2 class="center">Новости</h2>
+				<div class="anons clear">
+					<div class="anons-data">
+						<div class="number">01</div>
+						<div class="month">мар.</div>
+					</div>	
+					<div class="anons-title">
+						<a href="#">Открылся новый магазин в Тверской области.</a>
+					</div>	
+				</div>
+				<div class="anons clear">
+					<div class="anons-data">
+						<div class="number">05</div>
+						<div class="month">мар.</div>
+					</div>	
+					<div class="anons-title">
+						<a href="#">Открылся новый магазин в Тверской области.</a>
+					</div>	
+				</div>
+				<div class="anons clear">
+					<div class="anons-data">
+						<div class="number">07</div>
+						<div class="month">мар.</div>
+					</div>	
+					<div class="anons-title">
+						<a href="#">Открылся новый магазин в Тверской области.</a>
+					</div>	
+				</div>
+				<div class="anons clear">
+					<div class="anons-data">
+						<div class="number">09</div>
+						<div class="month">мар.</div>
+					</div>	
+					<div class="anons-title">
+						<a href="#">На трассе Моска-Рига Балтия в Тверской области открылся новый магазин.</a>
+					</div>	
+				</div>
+				<div class="anons clear">
+					<div class="anons-data">
+						<div class="number">16</div>
+						<div class="month">мар.</div>
+					</div>	
+					<div class="anons-title">
+						<a href="#">Открылся новый магазин в Тверской области.</a>
+					</div>	
+				</div>
+			</div>
+			<div class="articles">
+				<div>
+					<div class="articles__nav">
+						<div class="articles__next"></div>
+						<div class="articles__prev"></div>
+					</div>
+					<h2 class="center">Статьи</h2>
+				</div>
+				<ul class="mp-articles">
+					<li>
+						<div class="main-page-article">
+							<img src="./img/article1.jpg">
+							<h3 class="main-page-article__article-title">Что нужно знать при выборе металлочерепицы и как не ошибиться?</h3>
+							<p>Приемлемая стоимость металлочерепицы, легкость монтажа и функциональность часто являются самыми главными критериями при выборе <a href="#">Подробнее</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="main-page-article">
+							<img src="./img/slider/slide2.jpg">
+							<h3 class="main-page-article__article-title">Статья 2</h3>
+							<p>Приемлемая стоимость металлочерепицы, легкость монтажа и функциональность часто являются самыми главными критериями при выборе <a href="#">Подробнее</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="main-page-article">
+							<img src="./img/slider/slide3.jpg">
+							<h3 class="main-page-article__article-title">Статья 3</h3>
+							<p>Приемлемая стоимость металлочерепицы, легкость монтажа и функциональность часто являются самыми главными критериями при выборе <a href="#">Подробнее</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="news-articles-links container">
+			<div class="all-news"><a class="baselink" href="#">Все новости</a></div>
+			<div class="all-articles"><a class="baselink" href="#">Все статьи</a></div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<foother>
+		<div id="bottom-menu">
+			<div class="container-foother">
+					<ul class="bottom-menu">
+						<li>
+							<a href="#">О производстве</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Статьи</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="foother">
+			<div class="container-foother">
+				<div class="foother">
+					<div style="display: inline-block;">
+						<div>
+							<div class="contacts">
+								<div class="contacts__text_c-w">Профессиональная компания &laquo;ProfSystem&raquo;</div>
+							</div>
+							<div class="contacts">
+								<div class="contacts__icon-social-vk"></div>
+							</div>
+							<div class="contacts">
+								<div class="contacts__icon-social-fb"></div>
+							</div>
+							<div class="contacts">
+								<div class="contacts__icon-social-ok"></div>
+							</div>
+						</div>
+						<div>
+							<div class="contacts">
+								<div class="contacts__text_c-w">&#9400; 2017 Все права защищены</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="display: inline-block; vertical-align: top; width: 290px;">
+						<div>
+							<div class="contacts">
+								<div class="contacts__icon-address"></div>
+								<div class="contacts__text_c-w">Тверь, ул.Паши Савельевой, офис 506</div>
+							</div>
+						</div>
+						<div>
+							<div class="contacts">
+								<div class="contacts__icon-email"></div>
+								<div class="contacts__text_c-w">email@gmail.com</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="display: inline-block; vertical-align: top; padding-top: 5px;">
+						<div class="contacts">
+							<form class="search-form" name="search-form-bottom">
+								 <input type="text" class="search-form_input" name="search" placeholder="поиск...">
+								 <div class="search-form__icon-phone"></div>
+							</form>	
+						</div>
+					</div>
+
+					<div class="right">
+						<div style="height: 35px;">
+							<div class="contacts right">
+								<div class="contacts__icon-phone-b"></div>
+								<div class="contacts__text_c-w-fs16">8(900) 800-80-80</div>
+							</div>
+						</div>
+						<div>
+							<div class="contacts right">
+								<div class="contacts__call_big">ЗАКАЗАТЬ ЗВОНОК</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</foother>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

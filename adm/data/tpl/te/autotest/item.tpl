@@ -1,0 +1,1 @@
+<div><input type='checkbox' name='tc[]' value='{$test_class}' onClick='uncheck_parents(this)'><span class="zag">{$test_title}</span>{if $test_desc}<br><span class="comment2">{$test_desc}</span>{/if}</div>

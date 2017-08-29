@@ -1,0 +1,136 @@
+.calendar {
+	width: 182px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.calendar div.top {
+	height: 4px;
+	background: url(/common/adm/img/calendar/bg_top.gif);
+}
+
+.calendar div.middle {
+	background: url(/common/adm/img/calendar/bg_middle.gif);
+	text-align: center;
+}
+
+.calendar div.bottom {
+	height: 4px;
+	background: url(/common/adm/img/calendar/bg_bottom.gif);
+}
+
+.calendar table td, .calendar a, .calendar input, .calendar select {
+	font-size: 11px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar table {
+	border-collapse: collapse;
+}
+
+.calendar table.header {
+	width: 100%;
+	margin: 0px auto 4px auto;
+   border-collapse: collapse;
+}
+
+.calendar table.date {
+	width: 96%;
+    margin: 0px 2px 0px 4px;
+	background-color: #ffffff;
+	border: 1px solid #c8c8c8;
+}
+
+.calendar table.date tr {
+	height: 16px;
+}
+
+.calendar table.time {
+	width: auto;
+	margin: 4px auto 0px auto;
+}
+
+.calendar td.weekdays {
+	background-color: #f5f5f5;
+	color: #787878;
+	padding: 2px 0px 2px 0px;
+}
+
+.calendar a:link, .calendar a:active, .calendar a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+.calendar a:hover {
+	color: #618a14;
+	text-decoration: underline;
+}
+
+.calendar a.weekend {
+	color: #000000;
+}
+
+.calendar td.today {
+	font-weight: bold;
+	background-color: #9dc52c;
+	padding: 1px 2px 1px 2px;
+}
+.calendar a.today {
+	color: #ffffff;
+}
+
+.calendar td.year-up {
+	width: 16px;
+	height: 10px;
+	cursor: pointer;
+	background-image: url(/common/adm/img/calendar/up.gif);
+	background-position: 0px 1px;
+   _background-position: 0px 2px;
+	background-repeat: no-repeat;
+   padding: 0;
+   font-size: 0px;
+}
+.calendar td.year-down {
+	width: 16px;
+	height: 10px;
+	cursor: pointer;
+	background-image: url(/common/adm/img/calendar/down.gif);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+   padding: 0;
+   font-size: 0px;
+}
+.calendar td.close {
+	width: 20px;
+	height: 16px;
+	cursor: pointer;
+	background-image: url(/common/adm/img/calendar/close.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+   padding: 0;
+   font-size: 0px;
+}
+.calendar td.time_separator {
+	width: 3px;
+	background-image: url(/common/adm/img/calendar/separator.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.calendar td.time_select {
+	width: 50px;
+}
+
+.calendar select {
+	text-align: left;
+}
+.calendar select.month {
+	width: 75px;
+}
+.calendar select.time {
+	width: 40px;
+}
+
+.calendar input.year {
+	width: 50px;
+	text-align: left;
+}

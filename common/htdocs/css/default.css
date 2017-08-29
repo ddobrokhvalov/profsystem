@@ -1,0 +1,277 @@
+HTML, BODY {
+				padding: 0px;  
+				margin: 0px; 
+				color: #000; 
+				font-size: 12px;
+				font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+			  background: #FFFFFF;	
+				height: 100%;
+				}
+				
+P, DIV, A, TABLE, UL, OL {font-size: 12px; text-decoration: none;}
+P {margin: 10px 0 17px 0; padding-bottom: 0;}
+
+H1 {
+	color: #f90;
+	font-size: 20px;
+	font-weight: normal;
+	}
+H2 {font-size: 14px;}
+H3 {font-size: 12px;}
+
+
+A {text-decoration: underline; color: #069;}
+H2 A {font-size: 14px; text-decoration: underline;}
+
+UL {	
+		margin-left: 10px;
+		padding: 2px 3px 10px 0px;
+		}
+		
+UL LI {
+		list-style-type: none;
+		background: url(/common/img/bullit-menu.gif) no-repeat 0px 3px;
+		padding-left: 23px;
+		font-size: 13px;
+		}
+		
+
+OL {margin-left: 33px;}
+OL LI {padding: 1px 0 1px 0px;}
+
+img, a img {
+  border: 0px solid #cccccc;
+}
+
+
+.list {
+				padding: 2px 3px 0px 0px;
+				margin-left: 8px;
+				} 
+				
+.list .num {padding-right: 3px;}
+
+.table {border-top: 1px solid #000; border-collapse:collapse; }
+
+.table TH {    
+	font-size: 11px; 
+	text-align: left;
+	background: #ccc; 
+	padding: 5px 10px 7px 10px; 
+	border-bottom: 1px solid #000;
+	}
+				
+.table TD {
+	border-bottom: 1px solid #000; 
+	padding: 4px 10px 8px 10px;
+	}
+
+FORM {
+		margin: 0;
+		padding: 0;
+		}
+INPUT, SELECT, TEXTAREA {	
+								color: #000000; 
+								margin-left: 0px;
+								font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+								}
+
+TEXTAREA {height: auto; padding-left: 2px; font-size: 12px;}
+
+.input_data {margin-left: 0px; width: 150px;}
+.calendar_w {padding: 0px; margin: 0px; }
+.calendar {padding-left: 10px;}
+.button {height: auto; border: none; }
+.radio {background: none; margin-top: 10px; margin-left: -2px; padding-top: 6px;}
+.separator {background: #c8c8c8; margin: 10px 0 10px 0;}
+.form_area {padding: 5px 0 10px 0;}
+.input_w {width: 300px;}
+.red {color: #ff0033;}
+.bottom_f {padding: 1px 0 7px 0;}
+.num {color: #c8c8c8;}
+.other_w {width: 150px;}
+
+#main-tab {
+				width: 100%;
+				height: 100%;
+			}
+			
+#left {
+		width: 195px;
+		padding: 0 30px 20px 20px;
+		vertical-align: top;
+		}
+
+#logo {
+			border-top: 10px solid #999;
+			padding: 17px 0 12px 0;
+		}		
+		
+#center {
+			padding-top: 87px;
+			}
+
+#right {
+		   	width: 100%;
+				padding: 0 20px 20px 0px;
+				vertical-align: top;
+			}
+
+#extra {
+			margin: 25px 60px 10px 1px;
+			}
+
+#extra A {padding: 0 0 0 0px;}
+			
+#footer { 
+					padding: 0 20px 20px 20px;
+					vertical-align: bottom;
+					}
+#copyrights {
+						padding: 15px 12px 24px 12px; 
+						border-top: 10px solid #999999;
+						font-size: 11px;					
+						}
+						
+.sub-links {
+						margin: 20px 0;
+						clear: both;
+						}
+
+UL#main-menu {
+					border-right: 1px dashed #999;
+					margin: 10px 0; 
+					padding: 4px 0;
+					}
+
+UL#main-menu LI {
+					list-style-type: none;	
+					background: url(/common/img/bullit-menu.gif) no-repeat 0px 3px;
+					padding: 0 0 0 12px;
+					font-size: 13px;
+					}
+					
+UL#main-menu LI UL	{
+											margin: 6px 0; 
+											padding: 0; 
+										}
+					
+UL#main-menu LI UL LI {
+											list-style-type: none;
+											background: url(/common/img/bullit-menu.gif) no-repeat 0px 3px;
+											padding: 0 0 3px 12px;
+											font-size: 13px;
+											}
+								
+UL#main-menu LI UL LI.selected {
+																	font-weight: bold;
+																	}
+													
+UL#main-menu LI UL LI UL {
+									margin: 6px 0; 
+									padding: 0; 
+								}
+					
+UL#main-menu LI UL LI.selected UL LI,
+UL#main-menu LI UL LI UL LI {
+											list-style-type: none;
+											background: url(/common/img/bullit-menu.gif) no-repeat 0px 3px;
+											padding: 0 0 3px 12px;
+											font-size: 11px;
+											font-weight: normal;
+											}
+											
+UL#main-menu LI UL LI UL LI.selected  {
+																	font-weight: bold;
+																	}
+											
+UL#main-menu LI UL LI UL LI A { font-size: 11px; color: #069; }
+
+					
+.status {
+					margin: 0 0 7px 0; 
+					border-bottom: 1px solid #999; 
+					padding-bottom: 8px;
+					font-size: 10px;
+					}
+					
+.status A {
+			background: url(/common/img/status.gif) no-repeat right; 
+			text-decoration: none;
+			padding-right: 13px;
+			margin-right: 5px;
+			font-size: 10px;		
+			}
+			
+.status SPAN {color: #000; padding-right: 12px;}
+
+FORM#q-search {padding-top: 28px;}				
+
+FORM#q-search .input-text {
+									height: 13px;
+									width: 98px;
+									line-height: 12px;
+									font-size: 12px;
+									margin: 0 0 0 4px;
+									padding: 0 0 1px 2px;
+									border: 1px solid #999;
+									}
+			
+FORM#q-search .text-pad { padding-top: 1px; font-size: 12px;}
+
+
+.form-pad { padding: 10px 0 20px 0; }
+.f-input {padding: 0 0 5px 10px; }
+.f-calendar {padding: 0 10px 0 10px;}
+
+
+.pager {text-align: left; margin-top: 20px;}
+TABLE.pager, TABLE.pager A, TABLE.pager A:link, TABLE.pager A:hover, TABLE.pager A:visited {
+					font-family: Tahoma; 
+					font-size: 11px; 
+					line-height: normal;
+				}
+TABLE.pager A {text-decoration: underline;} 				
+TABLE.pager .first { margin: 0 4px 0 0;}
+TABLE.pager .prev {margin: 0 5px 0 3px;}
+TABLE.pager .next {margin: 0 3px 0 5px;}
+TABLE.pager .last {margin: 0 0 0 4px;}
+TABLE.pager TD.first-tab {padding-right: 1px;}
+TABLE.pager TD.prev-tab {padding-right: 4px;}
+TABLE.pager TD.next-tab {padding-left: 4px;}
+TABLE.pager TD.last-tab {padding-left: 1px;}
+TABLE.pager .sptr {padding: 0 3px 0 3px;}
+TABLE.pager .number {font-weight: normal;}
+
+
+DIV.spacer {
+				 font-size: 0px;
+				 line-height: 0px;
+				 margin: 0px;
+				 padding: 0px;	
+				 background: transparent; 
+				 border: none;
+				 display: block;
+				 visibility: hidden;
+				}
+				
+SPAN.spacer {
+				 font-size: 0px;
+				 line-height: 0px;
+				 margin: 0px;
+				 padding: 0px;	
+				 background: transparent; 
+				 border: none;
+				 visibility: hidden;
+				}
+				
+.grey-line {
+				background: #999;
+				}		
+				
+.error {
+				color: #FF0000;
+				padding: 10px 0 10px 0;
+				}		
+				
+				

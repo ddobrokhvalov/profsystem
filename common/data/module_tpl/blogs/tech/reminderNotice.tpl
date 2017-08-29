@@ -1,0 +1,7 @@
+{$SYSW_BLOG_MSG_DEAR},
+<br>
+{$SYSW_BLOG_MSG3} <a href="{$REMINDER_URL}">{$REMINDER_URL}</a>
+<br><br>
+
+<br>
+{$SYSW_BLOG_SIGNATURE}
