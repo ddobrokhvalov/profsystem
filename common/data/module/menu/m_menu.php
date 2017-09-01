@@ -85,7 +85,11 @@ class m_menu extends module{
 	 * Вариант использования "Дочерние уровни"
 	 */
 	protected function vm_child_levels(){
-		return $this->get_level_array($this->env["page_id"], 1, $this->up_path[$this->env["page_id"]]["_FULL_PATH"]);
+		$ret = $this->get_level_array($this->env["page_id"], 1, $this->up_path[$this->env["page_id"]]["_FULL_PATH"]);
+		/*print_r("<pre>");
+		print_r($ret);
+		print_r("</pre>");*/
+		return $ret;
 	}
 
 	/**
