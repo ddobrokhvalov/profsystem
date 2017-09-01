@@ -1,0 +1,116 @@
+.call_order_form{
+	display: none;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 30px;
+    width: 700px;
+    margin-left: -350px;
+    height: 400px;
+    margin-top: -200px;
+    z-index: 101;
+	border: 1px solid #e9e9e9;
+	border-top: 5px solid #99c900;
+	/*
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	*/
+}
+.call_order_form .call_order_form_close{
+	background: url(../img/icon-mod-close.png) no-repeat scroll center center;
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    right: 21px;
+    top: 19px;
+    width: 21px;
+}
+.call_order_form h3{
+	font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+}
+.call_order_form .field_string{
+	display: inline-block;
+    width: 49%;
+    padding: 60px 0 15px;
+}
+.call_order_form .field_string input{
+	font-size: 18px;
+    padding: 15px 15px 15px 20px;
+    color: #737373;
+    width: 100%;
+}
+.call_order_form .field_string:nth-child(2n+1){
+	padding-right: 15px;
+}
+.call_order_form .field_string:nth-child(2n){
+	padding-left: 15px;
+}
+.call_order_form .call_order_form_captcha{
+	padding-bottom: 30px;
+}
+.call_order_form .call_order_form_captcha img{
+	display: inline-block;
+    height: 55px;
+}
+.call_order_form .call_order_form_captcha input[type='text']{
+	font-size: 18px;
+	padding: 15px 15px 15px 20px;
+	color: #737373;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 33px;
+    width: 400px;
+}
+.call_order_form .call_order_form_buttons{
+	text-align: center;
+}
+.call_order_form .call_order_form_buttons  input[type='submit']{
+	width: 225px;
+	height: 55px;
+	display: inline-block;
+	padding-top: 0px;
+	text-transform: uppercase;
+	background-color: #9cc900;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans',serif;
+	font-size: 13px;
+	font-weight: lighter;
+	border: none;
+	cursor: pointer;
+}
+.items.mode_list .item{
+	width: 400px;
+	height: 160px;
+}
+.items.mode_list .item .item-img{
+	width: 45%;
+	height: 158px;
+	border-right: #9cc900 3px solid;
+	border-bottom: none;
+	float: left;
+}
+.items.mode_list .item .item-img img{
+	/*width: auto;
+	height: 100%;*/
+}
+.items.mode_list .item-preview{
+	width: 180px;
+	height: 160px;
+}
+.items.mode_list .item .item-type{
+	margin-top: 20px;
+}
+.select-view-item__p, .select-view-item__s{
+	cursor: pointer;
+}
+.select-view-item__p.active{
+	background-image: url(../img/v-p-active.png);
+}
+.select-view-item__s.active{
+	background-image: url(../img/v-s-active.png);
+}
