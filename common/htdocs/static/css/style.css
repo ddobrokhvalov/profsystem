@@ -749,3 +749,170 @@ ul.l-side-menu a{
 	display: inline-block;
 
 }
+
+.card-img-b{
+	width: 640px;
+	height: 480px;
+	overflow:hidden; /* this is important */
+	position:relative; /* this is important too */
+	float: left;
+	margin-right: 40px;
+}
+.card-img-b img{
+	width: auto;
+	height: 480px;
+}
+.card-img-container{
+	width: 160px;
+	height: 480px;
+	overflow:hidden; /* this is important */
+	position:relative; /* this is important too */
+	float: left;
+}
+.card-img-container-u{
+	list-style: none;
+}
+.card-img-prev{
+	position: absolute;
+	top:5px;
+	left:65px;
+	width: 25px;
+	height: 25px;
+	z-index: 999;
+	cursor: pointer;
+	background-image: url(../img/go_top.png);
+	background-repeat: no-repeat;
+}
+.card-img-next{
+	position: absolute;
+	bottom:5px;
+	left:65px;
+	width: 25px;
+	height: 25px;
+	z-index: 999;
+	cursor: pointer;
+	background-image: url(../img/go_bottom.png);
+	background-repeat: no-repeat;
+}
+
+.card-img{
+	width: 160px;
+	height: 480px;
+	overflow:hidden; /* this is important */
+	position:relative; /* this is important too */
+	float: left;
+	cursor: pointer;
+}
+.card-img-s{
+	width: 160px;
+	height: 160px;
+	overflow:hidden; /* this is important */
+	position:relative; /* this is important too */
+}
+.card-img-s img{
+	width: auto;
+	height: 160px;
+}
+.size-and-price-h{
+    font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+    font-weight: bold;	
+    color: #302f2f;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}    
+.size-and-price-item{
+	display: inline-block;
+	width: 278px;
+	height: 30px;
+}
+.card-rating{
+  width:220px;
+  height: 40px;
+  overflow:hidden; /* this is important */
+  position:relative; /* this is important too */
+}
+.card-rating__star{
+	width: 40px;
+	height: 40px;
+	background: url(../img/star-b-off.png) no-repeat;
+	display: inline-block;
+}
+.card-rating__star.on{
+	background: url(../img/star-b-on.png) no-repeat;
+}
+.card-rating__star.hover{
+	background: url(../img/star-b-on.png) no-repeat;
+}
+.card-rating__star.unhover{
+	background: url(../img/star-b-off.png) no-repeat;
+}
+.card-price{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;	
+	font-size: 26px;
+	color: #282828;
+}
+.card-price__normal{
+	width: 260px;
+	float: left;
+}
+.card-price__normal:before{
+	content: 'Цена';
+}
+.card-price__normal p{
+    font-size: 40px;
+    font-weight: 400;
+    color: #b8b8b8;
+    padding-top: 10px;
+}
+.card-price__normal p:after{
+	content: ' p.';
+}
+.card-price__old{
+	width: 260px;
+	float: left;
+}
+.card-price__old:before{
+	content: 'Цена без скидки';
+}
+.card-price__old p{
+	font-size: 40px;
+	font-weight: 400;
+	color: #b8b8b8;
+	padding-top: 10px;
+	text-decoration:line-through;
+}
+.card-price__new{
+	width: 260px;
+	float: left;
+}
+.card-price__new:before{
+	content: 'Цена со скидкой';
+}
+.card-price__new p{
+	font-size: 40px;
+	font-weight: 400;
+	color: #e73646;
+	padding-top: 10px;
+}
+.card-price__new p:after{
+	content: ' p.';
+}
+.card-price-about{
+    color: #3e3e3e;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.card-price-about span.mail_to{
+    color: #0765bc;
+	text-decoration: underline;
+}
+.card-description{
+	border-top: 3px solid #9cc900;
+	padding-top: 15px;
+	padding-bottom: 105px;
+}
