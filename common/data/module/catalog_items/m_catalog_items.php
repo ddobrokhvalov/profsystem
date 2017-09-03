@@ -55,11 +55,20 @@ class m_catalog_items extends module
 	*/
 	protected function mode_item()
 	{
-		/*// Получаем содержимое новости
+		// Получаем содержимое 
 		$query_item = $this -> get_module_sql( $this -> module_table.'.*, IF2.INF_BLOCK_ID', 'and '.$this -> module_table_pk.' = :id' );
+		
 		$content_item = db::sql_select( $query_item, $this -> get_module_binds() + array( 'id' => intval( $this -> q_param['id'] ) ) );
 		
 		if ( !count( $content_item ) ) return;
+		
+		$query_images = "select * from CATALOG_IMAGES where CATALOG_ITEMS_ID = :item_id";
+		$content_images = db::sql_select($query_images, array("item_id"=>$content_item[0]["CATALOG_ITEMS_ID"]));
+		$content_item[0]["content_images"] = $content_images;
+		
+		$query_prices = "select * from CATALOG_PRICES where CATALOG_ITEMS_ID = :item_id";
+		$content_prices = db::sql_select($query_prices, array("item_id"=>$content_item[0]["CATALOG_ITEMS_ID"]));
+		$content_item[0]["content_prices"] = $content_prices;
 		
 		// Выводим в шаблон ссылки на ленту и архив новостей
 		$this -> tpl -> assign( $this -> view_param['view_mode'] == 'archives' ? 'arch_url': 'back_url',
@@ -72,13 +81,12 @@ class m_catalog_items extends module
 		}
 		
 		$tag_list = $this -> get_tag_list( $content_item[0]['NEWS_ID'] );
-		$content_item[0]['TAG_LIST'] = $tag_list[$content_item[0]['NEWS_ID']];
 		
-		// Выводим в шаблон содержимое новости
-		$content_item[0]['NEWS_DATE'] = $this -> format_date( $content_item[0]['NEWS_DATE'] );
-		$this -> tpl -> assign( $content_item[0] );
-
-		$this -> title = $content_item[0]['TITLE'];*/
+		$this -> tpl -> assign("content_item", $content_item[0] );
+		/*print_r("<pre>");
+		print_r($page);
+		print_r("</pre>");*/
+		$this -> title = $content_item[0]['TITLE'];
 	}
 	
 	/**

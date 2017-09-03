@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/calendar.css">
 	<script type="text/javascript" src="/common/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/common/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="/common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" href="/common/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 	{literal}
 	<script type="text/javascript" charset="utf-8">
 	    var $ = jQuery.noConflict();
@@ -58,7 +60,9 @@
 			<div class="{if $areas.left_col_1 || $areas.left_col_2 || $areas.left_col_3 || $areas.left_col_4 || $areas.left_col_5}content{/if}">
 				{$areas.status}
 				{if $page.TITLE}
-					<h1>{$page.TITLE}</h1>
+					{literal}<?if(!$_GET["id_4"]):?>{/literal}
+						<h1>{$page.TITLE}</h1>
+					{literal}<?endif;?>{/literal}
 				{/if}
 				{$areas.inner_body_1}
 				{$areas.inner_body_2}

@@ -52,3 +52,69 @@ $(".articles__prev").click(function(){
 });
 
 // *******************
+/*
+* Листалка изображений
+*/
+img_slider = {};
+img_slider.o = $(".card-img");
+img_slider.images = $(".card-img-s");
+img_slider.c = 1;
+img_slider.k = 3;
+img_slider.l = img_slider.images.length;
+img_slider.h =  $(img_slider.images[0]).height();
+
+img_slider['o'].height(img_slider.h*img_slider.l+"px");
+
+img_slider.img_next = function(){
+	var ml;
+	if (img_slider.c<img_slider.k) {
+		ml = -(img_slider.c+1)*img_slider.h;
+		img_slider['o'].animate({marginTop: ml+"px"});
+		img_slider.c = img_slider.c+2;
+	};
+};
+img_slider.img_prev = function(){
+	var ml;
+	if (img_slider.c>1) {
+		ml = -(img_slider.c-3)*img_slider.h;
+		img_slider['o'].animate({marginTop: ml+"px"});
+		img_slider.c= img_slider.c-2;
+	};
+};
+img_slider.check =  function(){
+	if (img_slider.l>img_slider.k) {
+		if (img_slider.c>1) {
+			$('.card-img-prev').show();
+		}else{
+			$('.card-img-prev').hide();
+		};
+		if (img_slider.c<img_slider.k) {
+			$('.card-img-next').show();
+		}else{
+			$('.card-img-next').hide();
+		};
+
+	}else{
+		$('.card-img-prev').hide();
+		$('.card-img-next').hide();
+	};
+};
+img_slider.check();
+
+$('.card-img-next').click(function() {
+	img_slider.img_next();
+	img_slider.check();
+});
+$('.card-img-prev').click(function() {
+	img_slider.img_prev();
+	img_slider.check();
+});
+
+$('.card-img-s img').click(function(){
+	var src = $(this).attr('src');
+	$('.card-img-b img').attr('src',src);
+	$('a#fancy_image').attr('href',src);
+});
+$("a#fancy_image").fancybox();
+
+// *******************

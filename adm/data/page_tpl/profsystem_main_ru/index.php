@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/calendar.css">
 	<script type="text/javascript" src="/common/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/common/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="/common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" href="/common/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 	{literal}
 	<script type="text/javascript" charset="utf-8">
 	    var $ = jQuery.noConflict();
