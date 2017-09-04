@@ -2,7 +2,6 @@
 /**
  * Модуль "Каталог"
  *
- * @package    RBC_Contents_5_0
  * @subpackage module
  * @copyright  Copyright (c) 2017 Dmitry Dobrokhvalov
  */
@@ -50,9 +49,7 @@ class m_catalog_items extends module
 		$this -> body = $this -> tpl -> fetch( $this -> tpl_dir.$tpl_file );
 	}
 	
-	/**
-	* Вывод содержимого новости
-	*/
+	
 	protected function mode_item()
 	{
 		// Получаем содержимое 
@@ -70,7 +67,7 @@ class m_catalog_items extends module
 		$content_prices = db::sql_select($query_prices, array("item_id"=>$content_item[0]["CATALOG_ITEMS_ID"]));
 		$content_item[0]["content_prices"] = $content_prices;
 		
-		// Выводим в шаблон ссылки на ленту и архив новостей
+		
 		$this -> tpl -> assign( $this -> view_param['view_mode'] == 'archives' ? 'arch_url': 'back_url',
 			lib::make_request_uri( array( 'id_'.$this -> env['area_id'] => '' ) ) );
 		
@@ -89,9 +86,7 @@ class m_catalog_items extends module
 		$this -> title = $content_item[0]['TITLE'];
 	}
 	
-	/**
-	* Вывод ленты новостей
-	*/
+	
 	protected function mode_list()
 	{
 		$filter_str = ''; $filter_arr = array();
@@ -191,7 +186,7 @@ class m_catalog_items extends module
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	/**
-	 * Завершение инициализации модуля. Используется для вывода ленты новостей в формате RSS
+	 * Завершение инициализации модуля. 
 	 */
 	function complete_init()
 	{
