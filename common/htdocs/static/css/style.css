@@ -916,3 +916,119 @@ ul.l-side-menu a{
 	padding-top: 15px;
 	padding-bottom: 105px;
 }
+
+/*****/
+.contacts-big-item{
+    display: inline-block;
+	width: 33%;
+
+}
+.contacts-big{
+}
+.contacts-big__name{
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 32px;
+	color: #949494;
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+
+.contacts-big__icon-address{
+	background: url(../img/icon-address-big.png) no-repeat;
+	width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 0px;	
+    margin-right: 4px;	
+}
+.contacts-big__icon-email{
+	background: url(../img/icon-email-big.png) no-repeat;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin-top: 6px;	
+	margin-right: 4px;	
+}
+.contacts-big__icon-phone{
+	background: url(../img/icon-phone-big.png) no-repeat;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin-top: 0px;	
+	margin-right: 4px;	
+}
+.contacts-big__text{
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 33px;
+	color: #282828;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -5px;
+}
+.contacts-big__text_b{
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 33px;
+	color: #5c5c5c;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -5px;
+}
+.contacts-big__text_l{
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 33px;
+	color: #0765bc;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -5px;
+	text-decoration: underline;
+}
+.yamap-container{
+	position: relative;
+	margin-top: 65px;
+	margin-bottom: 545px;
+}
+.ya-map{
+	width: 100%;
+	min-width: 1160px;
+	height: 595px;
+	background-color: #ccc;
+	z-index: 1;
+	position: relative;
+	border: 1px solid #ccc;
+    box-sizing: unset;
+}
+.triangle{
+	display: block;
+	width: 30px;
+	height: 20px;
+	background: url(../img/triangle.png) no-repeat;
+	margin: auto;
+	z-index: 3;
+    margin-top: -1077px;
+}
+.feedback-container{
+	height: 0px;
+	width: 100%;
+	min-width: 1160px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+}
+.feedback{
+	width: 930px;
+	height: 560px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-top: 10px solid #9cc900;
+	margin: auto;
+	z-index: 200;
+	margin-top: -80px;
+	padding-top: 60px;
+}
