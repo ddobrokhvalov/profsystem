@@ -7,8 +7,8 @@
 include_once( '../../data/config/params.php' );
 
 // Размер картинки
-define( 'CAPTCHA_WIDTH', 140 );
-define( 'CAPTCHA_HEIGHT', 40 );
+define( 'CAPTCHA_WIDTH', 193 );
+define( 'CAPTCHA_HEIGHT', 55 );
 
 // Фон над горами
 define( 'CAPTCHA_BG_COLOR1_R', 255 );
