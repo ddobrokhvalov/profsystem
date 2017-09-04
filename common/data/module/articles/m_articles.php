@@ -51,6 +51,8 @@ class m_articles extends module
 		
 		if ( !count( $content_item ) ) return;
 		
+		$this -> tpl -> assign( $this -> view_param['view_mode'] == 'archives' ? 'arch_url': 'back_url',
+			lib::make_request_uri( array( 'id_'.$this -> env['area_id'] => '' ) ) );
 		
 		if ( $this -> view_param['view_mode'] == 'list' )
 		{
@@ -60,7 +62,11 @@ class m_articles extends module
 		
 		$tag_list = $this -> get_tag_list( $content_item[0]['ARTICLES_ID'] );
 		$content_item[0]['TAG_LIST'] = $tag_list[$content_item[0]['ARTICLES_ID']];
-		
+		/*if($this->env["version"] == 1){
+			print_r("<pre>");
+			print_r($content_item);
+			print_r("</pre>");
+		}*/
 		$this -> tpl -> assign( $content_item[0] );
 
 		$this -> title = $content_item[0]['TITLE'];
@@ -105,7 +111,11 @@ class m_articles extends module
 		{
 			$path_and_area = $this -> get_url_by_module_param( 'ARTICLES', 'view_mode', $this -> view_param['view_mode'], $item['INF_BLOCK_ID'] );
 			$item['URL'] = lib::make_request_uri( array( 'id_' . $path_and_area['AREA'] => $item['ARTICLES_ID'] ), $path_and_area['PATH'] );
+			$item['ANNOUNCE'] = mb_substr($item['ANNOUNCE'], 0, 80, "utf-8");
 		}
+		/*print_r("<pre>");
+		print_r($content_ARTICLES);
+		print_r("</pre>");*/
 		$this -> tpl -> assign( 'content', $content_ARTICLES );
 	}
 	
