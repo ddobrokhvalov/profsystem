@@ -221,13 +221,14 @@ $app_objects=array(
 	// Заполненные анкеты
 	"FORM_ANSWER"=>array(
 		"title"=>"lang_form_answer",
-		"type"=>"table", "no_add" => 1, "no_change" => 1, 
+		"type"=>"table", "no_add" => 1,/* "no_change" => 1, */
 		"decorators"=>array("rights_inheritance"),
 		"rights_inheritance"=>"INF_BLOCK_ID",
 		"fields"=>array(
 			"IP"=>				array("title"=>"lang_form_answer_ip", "type"=>"text", "show"=>1, "is_main"=>1 ),
 			"INF_BLOCK_ID"=>	array("title"=>"lang_inf_block", "type"=>"select2", "fk_table"=>"INF_BLOCK", "filter"=>1, "show"=>1, "list_mode" => array( "by_module_name" => "FORM_QUESTION" ) ),
 			"ANSWER_TIME"=>		array("title"=>"lang_form_answer_time", "type"=>"datetime", "show"=>1, "sort"=>"desc" ),
+			"COMPLETED"=>		array("title"=>"Обработано", "type"=>"checkbox", "show"=>1, "filter"=>1),
 		),
 		"links"=>array(
 			"FORM_VALUES" => array( "show"=>1, "on_delete_cascade"=>1 ),
