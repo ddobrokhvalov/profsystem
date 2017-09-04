@@ -1,4 +1,4 @@
-<div class="call_order_form">
+<div class="call_order_form {if $captcha_error}call_order_form_visible{/if}">
 	<div class="call_order_form_close"></div>
 	<h3>{$form_name}</h3>
 		{if $form_description}
@@ -7,7 +7,7 @@
 	{if $captcha_error}
 		<div class="error">
 			{$sysw_captcha_error}
-	</div>
+		</div>
 	{/if}
 	{if $fields}
 		<script type="text/javascript" src="/common/js/core/translate.js.php?lang={$env.lang_root_dir}"></script>
