@@ -886,11 +886,11 @@ $app_objects=array(
 		'type' => 'table',
 		//'no_add' => 1, 'no_change' => 1, "no_delete"=>1,
 		'fields' => array(
-			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'is_main' => 1, 'errors' => _nonempty_, 'show' => 1),
+			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'errors' => _nonempty_, 'show' => 1),
 			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
 			'TITLE'	=>	array('title'=>'Заголовок', 'type'=>'text', 'errors' => _nonempty_, 'show' => 1),
 			'ANNOUNCE' => array('title'=>'Анонс', 'type'=>'textarea', 'show' => 1),
-			'BODY' => array('title'=>'Текст', 'type'=>'textarea', 'show' => 1, 'errors' => _nonempty_),
+			'BODY' => array('title'=>'Текст', 'type'=>'textarea', 'show' => 1, 'is_main' => 1, 'errors' => _nonempty_),
 			'VERSION' => array('title'=>'Версия', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
 			'LANG_ID' => array('title'=>'Язык', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
 		),
