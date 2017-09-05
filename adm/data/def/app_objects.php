@@ -869,6 +869,32 @@ $app_objects=array(
 			"TOTAL"=>	array("title"=>"lang_blog_image_settings_total", "type"=>"int", "show"=>"1", "errors" => _int_ ), // Общее количество
 		),
 	),
+	
+	"RATING"=>array(
+		'title' => 'Голосование',
+		'type' => 'table',
+		'fields' => array(
+			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'is_main' => 1, 'errors' => _nonempty_, 'show' => 1),
+			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
+			'RATING'    => array('title' => 'Оценка', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
+			'DATE'      => array('title' => 'Дата время голосования', 'type' => 'datetime', 'sort' => 'desc', 'show' => 1, 'errors' => _nonempty_),
+			'IP'        => array('title' => 'IP', 'type' => 'text', 'show' => 1)
+		),
+	),
+	"SEARCH_CONTENT"=>array(
+		'title' => 'Поисковый индекс',
+		'type' => 'table',
+		//'no_add' => 1, 'no_change' => 1, "no_delete"=>1,
+		'fields' => array(
+			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'is_main' => 1, 'errors' => _nonempty_, 'show' => 1),
+			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
+			'TITLE'	=>	array('title'=>'Заголовок', 'type'=>'text', 'errors' => _nonempty_, 'show' => 1),
+			'ANNOUNCE' => array('title'=>'Анонс', 'type'=>'textarea', 'show' => 1),
+			'BODY' => array('title'=>'Текст', 'type'=>'textarea', 'show' => 1, 'errors' => _nonempty_),
+			'VERSION' => array('title'=>'Версия', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
+			'LANG_ID' => array('title'=>'Язык', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
+		),
+	),
 
 );
 ?>
