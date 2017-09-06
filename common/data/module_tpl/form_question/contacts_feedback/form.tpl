@@ -1,6 +1,6 @@
-<div class="call_order_form {if $captcha_error}call_order_form_visible{/if}">
-	<div class="call_order_form_close"></div>
-	<h3>{$form_name}</h3>
+<div class="feedback">
+<div class="feedback_form">
+	<h2 class="center" style="color: #373737;">{$form_name}</h2>
 		{if $form_description}
 			<p>{$form_description}</p>
 		{/if}
@@ -20,7 +20,7 @@
 							<hr>
 						</div>
 					{else}
-						<div class="call_order_form_field field_{$item.QUESTION_TYPE}">
+						<div class="feedback_form__field feedback_form__field_{$item.QUESTION_TYPE} {if $item.QUESTION_TYPE == 'textarea'}feedback_form__field_string_message{/if}">
 								{if $item.QUESTION_TYPE != 'string' && $item.QUESTION_TYPE != 'textarea'}
 								<label class="call_order_form_field_label">{$item.TITLE}{if $item.IS_MANDATORY} <span style="color: red">*</span>{/if}</label>
 								{/if}
@@ -75,23 +75,24 @@
 					{/if}
 				{/foreach}
 				{if $captcha_id}
-					<div class="call_order_form_captcha">
+					<div class="feedback_form__captcha">
 							<img src="/common/tool/getcaptcha.php?captcha_id={$captcha_id}">
 							<input type="hidden" name="captcha_id_{$env.area_id}" value="{$captcha_id}">
 							<input placeholder="{$sysw_captcha}" type="text" name="captcha_value_{$env.area_id}" value="" lang="errors_nonempty_">
 					</div>
 				{/if}
-				<div class="call_order_form__checkbox_label">
+				<div class="feedback_form__checkbox_label">
 					<input type="checkbox" id="feedback_checkbox" name="im_ok">
 					<label for="feedback_checkbox">
 						Принимаю условия <a href="#" target="_blank">Соглашения по обработке персональных данных</a>
 					</label>
 				</div>
-				<div class="call_order_form_buttons">
+				<div class="feedback_form__submit_button">
 					<input type="hidden" name="done_{$env.area_id}" value="1">
 					<input type="submit" value="{$sysw_form_question_send}">
 				</div>
 		</form>
 		<div class="sub-links">{* $sysw_mandatory *}</div>
 	{/if}
+</div>
 </div>

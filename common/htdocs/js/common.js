@@ -58,27 +58,41 @@ $(".articles__prev").click(function(){
 img_slider = {};
 img_slider.o = $(".card-img");
 img_slider.images = $(".card-img-s");
-img_slider.c = 1;
-img_slider.k = 3;
-img_slider.l = img_slider.images.length;
-img_slider.h =  $(img_slider.images[0]).height();
+img_slider.c = 1; //тек элемент
+img_slider.k = 3; //размер видимого кадра
+img_slider.l = img_slider.images.length; //длина ленты изображений
+img_slider.maxs = img_slider.k - 1; //максимальный сдвиг
 
+img_slider.h =  $(img_slider.images[0]).height();
 img_slider['o'].height(img_slider.h*img_slider.l+"px");
 
 img_slider.img_next = function(){
-	var ml;
-	if (img_slider.c<img_slider.k) {
-		ml = -(img_slider.c+1)*img_slider.h;
+	var ml,delta;
+	var ost = img_slider.l-(img_slider.c+img_slider.maxs);
+
+	if (ost>0) {
+		if (ost>=img_slider.maxs) {
+			delta = img_slider.maxs;
+		} else {
+			delta = ost;
+		};
+		img_slider.c = img_slider.c+delta;
+		ml = -(img_slider.c-1)*img_slider.h;
 		img_slider['o'].animate({marginTop: ml+"px"});
-		img_slider.c = img_slider.c+2;
 	};
 };
 img_slider.img_prev = function(){
-	var ml;
+	var ml,delta;
+	var ost = img_slider.c-1;
 	if (img_slider.c>1) {
-		ml = -(img_slider.c-3)*img_slider.h;
+		if (ost>=img_slider.maxs) {
+			delta = img_slider.maxs;
+		} else {
+			delta = ost;
+		};
+		img_slider.c = img_slider.c-delta;
+		ml = -(img_slider.c-1)*img_slider.h;
 		img_slider['o'].animate({marginTop: ml+"px"});
-		img_slider.c= img_slider.c-2;
 	};
 };
 img_slider.check =  function(){
@@ -88,7 +102,7 @@ img_slider.check =  function(){
 		}else{
 			$('.card-img-prev').hide();
 		};
-		if (img_slider.c<img_slider.k) {
+		if ((img_slider.c+img_slider.k-1)<img_slider.l) {
 			$('.card-img-next').show();
 		}else{
 			$('.card-img-next').hide();

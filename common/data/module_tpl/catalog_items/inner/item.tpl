@@ -7,6 +7,10 @@
 	</style>
 {/literal}
 {if $content_item}
+		<div class="share42init" data-url="" data-title="{$content_item.TITLE}" data-image="http://{$smarty.server.HTTP_HOST}{$content_item.MAIN_IMG}"></div>
+	{literal}
+		<script type="text/javascript" src="/common/js/share42.js"></script>
+	{/literal}
 	<div class="card">
 		<div class="card-img-b">
 			<a id="fancy_image" href="{$content_item.MAIN_IMG}"><img src="{$content_item.MAIN_IMG}"></a>

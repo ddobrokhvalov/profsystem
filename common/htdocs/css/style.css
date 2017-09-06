@@ -757,6 +757,7 @@ ul.l-side-menu a{
 	position:relative; /* this is important too */
 	float: left;
 	margin-right: 40px;
+	border: 1px solid #ccc;
 }
 .card-img-b img{
 	width: auto;
@@ -992,7 +993,7 @@ ul.l-side-menu a{
 .yamap-container{
 	position: relative;
 	margin-top: 65px;
-	margin-bottom: 545px;
+	margin-bottom: 690px;
 }
 .ya-map{
 	width: 100%;
@@ -1002,7 +1003,7 @@ ul.l-side-menu a{
 	z-index: 1;
 	position: relative;
 	border: 1px solid #ccc;
-    box-sizing: unset;
+     box-sizing: unset;
 }
 .triangle{
 	display: block;
@@ -1011,7 +1012,7 @@ ul.l-side-menu a{
 	background: url(/common/img/profsystem_style/triangle.png) no-repeat;
 	margin: auto;
 	z-index: 3;
-    margin-top: -1077px;
+    margin-top: -1217px;
 }
 .feedback-container{
 	height: 0px;
@@ -1023,7 +1024,7 @@ ul.l-side-menu a{
 }
 .feedback{
 	width: 930px;
-	height: 560px;
+	height: 700px;
 	background-color: white;
 	border: 1px solid #ccc;
 	border-top: 10px solid #9cc900;
@@ -1032,3 +1033,88 @@ ul.l-side-menu a{
 	margin-top: -80px;
 	padding-top: 60px;
 }
+.feedback_form{
+	width: 640px;
+	margin: auto;
+}
+.feedback_form__field_string_name,
+.feedback_form__field_string_phone{
+	display: inline-block;
+    width: 300px;
+    padding: 50px 0 0;
+}
+.feedback_form__field_string_name{
+	margin-right: 35px;
+}
+.feedback_form__captcha{
+	display: block;
+	margin-top: 5px;	
+}
+.feedback_form__captcha img{
+	display: inline-block;
+	margin-right: 40px;
+}
+.feedback_form__captcha input{
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 15px 15px 20px;
+	color: #737373;
+	width: 400px;
+	vertical-align: top;
+	cursor: pointer;
+	outline-color:#9cc900;
+	float: right;
+}
+
+.feedback_form__field_string_message{
+	display: inline-block;
+    width: 640px;
+    padding: 25px 0 15px;
+}
+.feedback_form__field_string_name input, 
+.feedback_form__field_string_phone input,
+.feedback_form__field_string_message textarea{
+	font-size: 18px;
+    padding: 15px 15px 15px 20px;
+    color: #737373;
+    width: 100%;
+    cursor: pointer;
+    outline-color:#9cc900;
+}
+.feedback_form__field_string_message textarea{
+	height: 115px;
+}	
+
+.feedback_form__submit_button{
+	width: 260px;
+	height: 50px;
+	display: block;
+	margin: auto;
+}
+.feedback_form__submit_button  input[type='submit']{
+	width: 260px;
+	height: 50px;
+	display: inline-block;
+	margin: 50px auto 0px;
+	padding-top: 0px;
+	text-transform: uppercase;
+	background-color: #9cc900;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans',serif;
+	font-size: 13px;
+	font-weight: lighter;
+	border: none;
+	cursor: pointer;
+}
+.feedback_form__checkbox_label{
+	font-family: 'Open Sans',serif;
+	font-size: 16px;
+	font-weight: lighter;
+	font-style: italic;
+	margin-top: 10px;	
+
+} 
+.feedback_form__checkbox_label label a{
+    color: #0765bc;	
+} 

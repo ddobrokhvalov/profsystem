@@ -179,7 +179,7 @@ $app_objects=array(
 		"fields"=>array(
 			"TITLE"=>			array("title"=>"lang_form_question_title", "type"=>"text", "show"=>1, "is_main"=>1, "errors" => _nonempty_ ),
 			"QUESTION_ORDER"=>	array("title"=>"lang_order", "type"=>"order", "show"=>1, "sort"=>"asc" ),
-			"IS_MANDATORY"=>	array("title"=>"lang_form_question_is_mandatory", "type"=>"checkbox"),
+			"IS_MANDATORY"=>	array("title"=>"lang_form_question_is_mandatory", "type"=>"checkbox", "show"=>1),
 			"QUESTION_TYPE"=>	array("title"=>"lang_form_question_type", "type"=>"select1", "errors" => _nonempty_, "no_change"=>1, "disabled"=>1, "show"=>1,
 				"value_list" => array(
 					array( "title" => "lang_string", "value" => "string" ),
