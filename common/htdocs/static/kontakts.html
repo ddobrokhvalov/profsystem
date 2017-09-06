@@ -129,6 +129,38 @@
 					<h2 class="center" style="color: #373737;">Обратная связь</h2>
 
 
+<div class="feedback_form">
+	<form action="" method="post" name="form_feedback">
+		<div class="feedback_form__field_string_name">
+			<input type="text" placeholder="Ваше имя" value="" name="name">
+		</div>
+		<div class="feedback_form__field_string_phone">
+			<input type="text" placeholder="Телефон" value="" name="phone">
+		</div>
+		<div class="feedback_form__field_string_message">
+			<textarea placeholder="Сообщение" value="" name="message"></textarea>
+		</div>
+
+
+<div class="feedback_form__captcha">
+	<img src="./img/captcha.jpg">
+	<input type="hidden" name="captcha_id_15" value="b2211215aeb64b7a62308e33764f481a">
+	<input placeholder="Введите код на изображении" type="text" name="captcha_value_15" value="">
+</div>
+
+		<div class="feedback_form__checkbox_label">
+			<input type="checkbox" id="feedback_checkbox" name="im_ok">
+			<label for="feedback_checkbox">
+				Принимаю условия <a href="#" target="_blank">Соглашения по обработке персональных данных</a>
+			</label>
+		</div>
+		<div class="feedback_form__submit_button">
+			<input type="submit" value="Отправить" name="message"></textarea>
+		</div>
+	</form>
+</div>
+
+
 				</div>
 				<div class="triangle"></div>
 			</div>
