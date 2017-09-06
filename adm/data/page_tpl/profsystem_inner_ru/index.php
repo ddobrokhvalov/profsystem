@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	
+	<link href="/common/img/profsystem_style/favicon.png" rel="shortcut icon">
     <meta name="keywords" content="{$keywords}">
     <meta name="description" content="{$description}">
 	<title>{$title}</title>

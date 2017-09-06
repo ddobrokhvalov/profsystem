@@ -873,26 +873,27 @@ $app_objects=array(
 	"RATING"=>array(
 		'title' => 'Голосование',
 		'type' => 'table',
+		'no_add' => 1, 'no_change' => 1, "no_delete"=>1,
 		'fields' => array(
-			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'is_main' => 1, 'errors' => _nonempty_, 'show' => 1),
-			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
+			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'is_main' => 1, 'errors' => _nonempty_, 'show' => 1, 'filter'=>1),
+			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1, 'filter'=>1),
 			'RATING'    => array('title' => 'Оценка', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
-			'DATE'      => array('title' => 'Дата время голосования', 'type' => 'datetime', 'sort' => 'desc', 'show' => 1, 'errors' => _nonempty_),
+			'DATE'      => array('title' => 'Дата время голосования', 'type' => 'datetime', 'sort' => 'desc', 'show' => 1, 'errors' => _nonempty_, 'filter'=>1),
 			'IP'        => array('title' => 'IP', 'type' => 'text', 'show' => 1)
 		),
 	),
 	"SEARCH_CONTENT"=>array(
 		'title' => 'Поисковый индекс',
 		'type' => 'table',
-		//'no_add' => 1, 'no_change' => 1, "no_delete"=>1,
+		'no_add' => 1, 'no_change' => 1, "no_delete"=>1,
 		'fields' => array(
-			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'errors' => _nonempty_, 'show' => 1),
-			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1),
+			'TE_OBJECT_ID' => array('title' => 'Тип объекта', 'type' => 'select2', 'fk_table' => 'TE_OBJECT', 'errors' => _nonempty_, 'show' => 1, 'filter'=>1),
+			'OBJECT_ID' => array('title' => 'ID объекта', 'type' => 'int', 'errors' => _nonempty_, 'show' => 1, 'filter'=>1),
 			'TITLE'	=>	array('title'=>'Заголовок', 'type'=>'text', 'errors' => _nonempty_, 'show' => 1),
 			'ANNOUNCE' => array('title'=>'Анонс', 'type'=>'textarea', 'show' => 1),
 			'BODY' => array('title'=>'Текст', 'type'=>'textarea', 'show' => 1, 'is_main' => 1, 'errors' => _nonempty_),
-			'VERSION' => array('title'=>'Версия', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
-			'LANG_ID' => array('title'=>'Язык', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_),
+			'VERSION' => array('title'=>'Версия', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_, 'filter'=>1),
+			'LANG_ID' => array('title'=>'Язык', 'type'=>'int', 'show' => 1, 'errors' => _nonempty_, 'filter'=>1),
 		),
 	),
 
