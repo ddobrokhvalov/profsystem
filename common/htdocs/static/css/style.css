@@ -80,6 +80,7 @@ a.baselink{
 #katalog{
 	padding-top: 80px;
     background: #f9f9f9;
+	min-width: 1160px;
 }
 
 #foother{
