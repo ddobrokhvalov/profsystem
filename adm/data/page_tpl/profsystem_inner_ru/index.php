@@ -13,9 +13,9 @@
 	<script type="text/javascript" src="/common/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/common/js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="/common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" href="/common/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/common/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
 	{literal}
-	<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript">
 	    var $ = jQuery.noConflict();
 	    $(document).ready(function() {
 		});
@@ -28,12 +28,7 @@
 			<div class="container header">
 				{$areas.header_1}
 				{$areas.header_2}
-				<div class="contacts">
-					<form class="search-form" name="search-form-top">
-						 <input type="text" class="search-form_input" name="search" placeholder="поиск...">
-						 <div class="search-form__icon-phone"></div>
-					</form>	
-				</div>
+				{$areas.header_3}
 				{$areas.header_4}
 				{$areas.header_5}
 			</div>
@@ -93,12 +88,7 @@
 					</div>
 
 					<div style="display: inline-block; vertical-align: top; padding-top: 5px;">
-						<div class="contacts">
-							<form class="search-form" name="search-form-bottom">
-								 <input type="text" class="search-form_input" name="search" placeholder="поиск...">
-								 <div class="search-form__icon-phone"></div>
-							</form>	
-						</div>
+						{$areas.footer_4}
 					</div>
 
 					<div class="right">

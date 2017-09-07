@@ -292,3 +292,50 @@ ul.bottom-menu li{
 	float: right;
     margin-top: -60px;
 }
+.search_result_wrap{
+	margin-bottom: 60px;
+}
+.search_result_wrap .search_result_form{
+}
+.search_result_wrap .search_result_form .search_string{
+	font-size: 18px;
+	padding: 15px 225px 15px 20px;
+	color: #737373;
+	width: 100%;
+	outline-color: #9cc900;
+}
+.search_result_wrap .search_result_form .search_submit{
+	width: 225px;
+	height: 55px;
+	display: inline-block;
+	padding-top: 0px;
+	text-transform: uppercase;
+	background-color: #9cc900;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans',serif;
+	font-size: 13px;
+	font-weight: lighter;
+	border: none;
+	cursor: pointer;
+	float: right;
+    margin-top: -55px;
+    position: relative;
+}
+.search_result_wrap .search_result_div{
+}
+.search_result_wrap .search_result_div .search_result{
+	margin: 30px 0;
+    padding: 0;
+}
+.search_result_wrap .search_result_div .search_result .article_title{
+	font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+.search_result_wrap .search_result_div .search_result .article_announce{
+	font-size: 18px;
+    font-weight: lighter;
+    line-height: 32px;
+    color: #3e3e3e;
+}
