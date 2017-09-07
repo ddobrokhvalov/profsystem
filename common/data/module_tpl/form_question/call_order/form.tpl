@@ -82,7 +82,7 @@
 					</div>
 				{/if}
 				<div class="call_order_form__checkbox_label">
-					<input type="checkbox" id="feedback_checkbox" name="im_ok">
+					<input type="checkbox" id="feedback_checkbox" name="im_ok" lang="errors_nonempty_">
 					<label for="feedback_checkbox">
 						Принимаю условия <a href="#" target="_blank">Соглашения по обработке персональных данных</a>
 					</label>
