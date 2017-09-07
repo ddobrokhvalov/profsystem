@@ -98,12 +98,14 @@ $app_objects=array(
 			"PRICE"			=>	array("title"=>"Цена от", "type"=>"int", "show"=>1, "is_main"=>1, "errors" => _nonempty_ ),
 			"BODY"			=>	array("title"=>"Полное описание", "type"=>"textarea", "editor"=>1, "rows" => 15, "errors" => _nonempty_ ),
 			"MAIN_IMG"		=>	array('title'=>'Главное изображение', 'type'=>'img','show'=>1, 'upload_dir' => 'upload/catalog_item_img', "is_main"=>1, "errors" => _nonempty_ ),
+			/*"RATING"        => array('title' => 'Рейтинг', 'type' => 'text', 'no_add' => 1, 'no_change' => 1, 'disabled' => 1, "show"=>1),
+			"RATING_COUNT"  => array('title' => 'Количество проголосовавших', 'type' => 'text', 'no_add' => 1, 'no_change' => 1, 'disabled' => 1, "show"=>1),*/
 		),
 		"links"=>array(
 			"CATALOG_IMAGES" => array( "show"=>1, "on_delete_cascade"=>1),
 			"CATALOG_PRICES" => array( "show"=>1, "on_delete_cascade"=>1),
 			"CATALOG_VOTES" => array( "show"=>1, "on_delete_cascade"=>1),
-			"CATALOG_FEEDBACK" => array( "show"=>1, "on_delete_cascade"=>1),
+			/*"CATALOG_FEEDBACK" => array( "show"=>1, "on_delete_cascade"=>1),*/
 		),
 	),
 	

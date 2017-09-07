@@ -1,4 +1,5 @@
 <?php
+require_once params::$params['common_data_server']['value']."lib/op/rating.php";
 /**
  * Модуль "Каталог"
  *
@@ -41,9 +42,6 @@ class m_catalog_items extends module
 		{
 			$tpl_file = 'list.tpl'; $this -> mode_list();
 		}
-		/*print_r("<pre>");
-		print_r($this);
-		print_r("</pre>");*/
 		
 		// Выводим в случае необходимости ссылку на страницу с версией для печати
 		$this -> body = $this -> tpl -> fetch( $this -> tpl_dir.$tpl_file );
@@ -78,6 +76,9 @@ class m_catalog_items extends module
 		}
 		
 		$tag_list = $this -> get_tag_list( $content_item[0]['NEWS_ID'] );
+		
+		$content_item[0]['RATING'] = rating::getRating("CATALOG_ITEMS", $content_item[0]['CATALOG_ITEMS_ID']);
+		$content_item[0]['ALREADY_VOTE'] = rating::thisIpAlreadyVote("CATALOG_ITEMS", $content_item[0]['CATALOG_ITEMS_ID']);
 		
 		$this -> tpl -> assign("content_item", $content_item[0] );
 		/*print_r("<pre>");
@@ -153,9 +154,12 @@ class m_catalog_items extends module
 			$path_and_area = $this -> get_url_by_module_content('CATALOG_ITEMS', $item["CATALOG_ITEMS_ID"]);
 			$item['URL'] = lib::make_request_uri( array( 'id_' . $path_and_area['AREA'] => $item['CATALOG_ITEMS_ID'] ), $path_and_area['PATH'] );
 			$item['TAG_LIST'] = $tag_list[$item['CATALOG_ITEMS_ID']];
+			$item['RATING'] = rating::getRating("CATALOG_ITEMS", $item['CATALOG_ITEMS_ID']);
+			$item['ALREADY_VOTE'] = rating::thisIpAlreadyVote("CATALOG_ITEMS", $item['CATALOG_ITEMS_ID']);
 		}
+		
 		/*print_r("<pre>");
-		print_r($content_catalog_items);
+		print_r($te_object_id);
 		print_r("</pre>");*/
 		$this -> tpl -> assign( 'content', $content_catalog_items );
 	}

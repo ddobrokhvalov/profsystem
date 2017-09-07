@@ -1,7 +1,7 @@
 /*
 * Рейтинг звездочками
 */
-$(".item-rating__star").mouseenter(function(){
+$(".enabled_votes .item-rating__star").mouseenter(function(){
 	var rat_id = $(this).attr('data_id');
 	var rat_val = $(this).attr('rating');
 	$('.rating_'+rat_id+' .item-rating__star').removeClass('hover');
@@ -21,6 +21,35 @@ $(".item-rating").mouseleave(function(){
 	$(this).children('.item-rating__star').removeClass('hover');
 	$(this).children('.item-rating__star').removeClass('unhover');
 });
+
+$(".enabled_votes .item-rating__star").click(function(){
+		//alert(1);
+		var data_te_obj = $(this).attr("data_te_obj");
+		var data_id = $(this).attr("data_id");
+		var rating = $(this).attr("rating");
+		$.post("/common/ajax_vote.php", 
+			{'data_te_obj':data_te_obj, 'data_id':data_id, 'rating':rating}, 
+			function(data){
+				var rating = JSON.parse(data);
+				console.log(rating);
+				var rat_count = rating.COUNT;
+				var rat_val = rating.AVG_RATING;
+				
+				$('.rating_'+data_id+' .item-rating__star').each(function(){
+					$(this).removeClass('on');
+					$(this).removeClass('on');
+					var thisval = $(this).attr('rating');
+					if(rat_val>=thisval-0.4){
+						$(this).addClass('on');
+					}else if(rat_val>thisval-0.8){
+						//$(this).addClass('on');
+					}
+				});
+				$('.rating_'+data_id).removeClass('enabled_votes');
+				$('.rating_'+data_id).removeClass('rating_'+data_id);
+			}
+		);
+	});
 // *******************
 
 /*

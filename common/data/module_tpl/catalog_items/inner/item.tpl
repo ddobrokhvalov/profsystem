@@ -45,12 +45,12 @@
 	</div>
 	<div class="clear"></div>
 	<div class="rating"  style="padding-top: 40px;padding-bottom: 20px;">
-		<div class="card-rating rating_{$content_item.CATALOG_ITEMS_ID}">
-			<div class="card-rating__star on" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="1"></div>	
-			<div class="card-rating__star on" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="2"></div>	
-			<div class="card-rating__star on" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="3"></div>	
-			<div class="card-rating__star on" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="4"></div>	
-			<div class="card-rating__star" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="5"></div>	
+		<div class="card-rating rating_{$content_item.CATALOG_ITEMS_ID} {if !$content_item.ALREADY_VOTE}enabled_votes{/if}">
+			<div class="card-rating__star {if $content_item.RATING.AVG_RATING >= 0.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="1"></div>	
+			<div class="card-rating__star {if $content_item.RATING.AVG_RATING >= 1.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="2"></div>	
+			<div class="card-rating__star {if $content_item.RATING.AVG_RATING >= 2.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="3"></div>	
+			<div class="card-rating__star {if $content_item.RATING.AVG_RATING >= 3.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="4"></div>	
+			<div class="card-rating__star {if $content_item.RATING.AVG_RATING >= 4.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$content_item.CATALOG_ITEMS_ID}" rating="5"></div>	
 		</div>
 	</div>
 	<div class="price">
