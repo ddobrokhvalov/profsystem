@@ -73,3 +73,10 @@ $(".enabled_votes .card-rating__star").click(function(){
 		);
 	});
 // *******************
+
+$(".user_disclaimer_link").click(function(){	
+	$(".user_disclaimer_popup").hide();
+	$(".user_disclaimer_popup").css("visibility", "visible")
+	$(".user_disclaimer_popup").fadeIn(300);
+	return false;
+});

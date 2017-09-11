@@ -33,6 +33,7 @@
 		</div>
 	</div>
 	<div class="clear"></div>
+	{if $content_item.content_prices}
 	<div class="size-and-price">
 		<div class="size-and-price-h">
 			Размеры и цены
@@ -43,6 +44,7 @@
 			</div>
 		{/foreach}
 	</div>
+	{/if}
 	<div class="clear"></div>
 	<div class="rating"  style="padding-top: 40px;padding-bottom: 20px;">
 		<div class="card-rating rating_{$content_item.CATALOG_ITEMS_ID} {if !$content_item.ALREADY_VOTE}enabled_votes{/if}">
@@ -67,7 +69,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="card-price-about">
-			Более точную информацию о цене Вы можете узнать по телефону +7 (123) 123-12-12 или по электронной почте <span class='mail_to'>Prof.Systema@mail.ru</span>
+			Более точную информацию о цене Вы можете узнать по телефону +7 (919) 061-44-80 или по электронной почте <a href="mailto:Prof.Systema@mail.ru"><span class='mail_to'>Prof.Systema@mail.ru</span></a>
 		</div>
 		<div class="card-description">
 			<div class="size-and-price-h">Описание товара:</div>
