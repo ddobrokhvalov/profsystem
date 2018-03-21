@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Passwd zone"
-AuthUserFile /var/www/u6724423/public_html/ddobrokhvalov-tver.ru/dev/profsystem/common/data/.htpasswd
-Require valid-user
