@@ -48,6 +48,17 @@ foreach($te_objects as $te_object){
 										)
 								);
 			}
+			unset($search_content[$te_object["TE_OBJECT_ID"]][$te_object_item[$te_object["SYSTEM_NAME"]."_ID"]][$te_object_item["VERSION"]][$te_object_item["LANG_ID"]]);
+		}
+	}
+}
+var_dump($search_content);
+foreach($search_content as $TE_OBJECT_ID){
+	foreach($TE_OBJECT_ID as $content_id){
+		foreach($content_id as $version){
+			foreach($version as $item){
+				db::sql_query("delete from SEARCH_CONTENT where SEARCH_CONTENT_ID = :search_content_id", array("search_content_id"=>$item["SEARCH_CONTENT_ID"]));
+			}
 		}
 	}
 }
