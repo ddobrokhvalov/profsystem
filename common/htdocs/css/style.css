@@ -263,6 +263,9 @@ ul.bottom-menu li a:hover {
 	overflow:hidden; /* this is important */
 	position:relative; /* this is important too */
 	margin-bottom: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 }
 .item-img img{
 	width: 100%;
@@ -759,6 +762,9 @@ ul.l-side-menu a{
 	float: left;
 	margin-right: 40px;
 	border: 1px solid #ccc;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 }
 .card-img-b img{
 	width: auto;
@@ -812,8 +818,10 @@ ul.l-side-menu a{
 	position:relative; /* this is important too */
 }
 .card-img-s img{
-	width: auto;
-	height: 160px;
+	/*width: auto;
+	height: 160px;*/
+width: 100%;
+	height: auto;
 }
 .size-and-price-h{
     font-family: 'Open Sans', sans-serif;
@@ -1013,7 +1021,7 @@ ul.l-side-menu a{
 	background: url(/common/img/profsystem_style/triangle.png) no-repeat;
 	margin: auto;
 	z-index: 3;
-    margin-top: -1217px;
+    margin-top: -1815px;
 }
 .feedback-container{
 	height: 0px;

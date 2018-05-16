@@ -17,4 +17,20 @@
 		    });
             
             myMap.geoObjects.add(myPlacemark);
+
+            myMap2 = new ymaps.Map("map2", {
+                center: [56.855659, 35.925245],
+                zoom: 14,
+                controls: ["zoomControl"]
+            }); 
+            
+ 			var myPlacemark2 = new ymaps.Placemark([56.855659, 35.925245], {}, {
+		        iconLayout: 'default#image',
+		        iconImageHref: '/common/img/profsystem_style/ymaps-icon.png',
+		        iconImageSize: [70, 90],
+		        iconImageOffset: [-35, -90]
+		    });
+            
+            myMap2.geoObjects.add(myPlacemark2);
+
         }

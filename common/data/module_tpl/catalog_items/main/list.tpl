@@ -1,8 +1,8 @@
 <div class="items">
 	{foreach from=$content item=item key=key}
 		<div class="item">
-			<div class="item-img">
-				<img src="{$item.MAIN_IMG}">
+			<div class="item-img" style="background-image: url({$item.MAIN_IMG})">
+				{*<img src="{$item.MAIN_IMG}">*}
 				<a href='{$item.URL}' class="item-preview"></a>
 			</div>
 			<div class="item-type">{$item.TYPE}</div>
@@ -15,7 +15,7 @@
 				<div class="item-rating__star {if $item.RATING.AVG_RATING >= 4.6}on{/if}" data_te_obj="CATALOG_ITEMS" data_id="{$item.CATALOG_ITEMS_ID}" rating="5"></div>	
 			</div>
 			<div class="item-price">
-				<span class="normal">{$item.PRICE}</span>
+				{if !$view_param.show_price || $view_param.show_price == 'Y'}<span class="normal">{$item.PRICE}</span>{/if}
 			</div>
 		</div>
 	{/foreach}

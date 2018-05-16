@@ -12,9 +12,11 @@
 		<script type="text/javascript" src="/common/js/share42.js"></script>
 	{/literal}
 	<div class="card">
-		<div class="card-img-b">
-			<a id="fancy_image" href="{$content_item.MAIN_IMG}"><img src="{$content_item.MAIN_IMG}"></a>
+<a id="fancy_image" href="{$content_item.MAIN_IMG}">
+		<div class="card-img-b" style="background-image: url({$content_item.MAIN_IMG});">
+			{*<img src="{$content_item.MAIN_IMG}">*}
 		</div>
+</a>
 		<div class="card-img-container">
 			<ul class="card-img-container-u">
 				<li class="card-img-next"></li>
@@ -34,6 +36,7 @@
 	</div>
 	<div class="clear"></div>
 	{if $content_item.content_prices}
+        {if !$view_param.show_price || $view_param.show_price == 'Y'}
 	<div class="size-and-price">
 		<div class="size-and-price-h">
 			Размеры и цены
@@ -45,6 +48,7 @@
 		{/foreach}
 	</div>
 	{/if}
+        {/if}
 	<div class="clear"></div>
 	<div class="rating"  style="padding-top: 40px;padding-bottom: 20px;">
 		<div class="card-rating rating_{$content_item.CATALOG_ITEMS_ID} {if !$content_item.ALREADY_VOTE}enabled_votes{/if}">
@@ -57,9 +61,11 @@
 	</div>
 	<div class="price">
 		<div class="card-price">
+{if !$view_param.show_price || $view_param.show_price == 'Y'}
 			<div class="card-price__normal">
 				<p>от {$content_item.PRICE}</p>
 			</div>
+{/if}
 			{*<div class="card-price__old">
 				<p>60680</p>
 			</div>
@@ -69,7 +75,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="card-price-about">
-			Более точную информацию о цене Вы можете узнать по телефону +7 (919) 061-44-80 или по электронной почте <a href="mailto:Prof.Systema@mail.ru"><span class='mail_to'>Prof.Systema@mail.ru</span></a>
+			{if !$view_param.show_price || $view_param.show_price == 'Y'}Более точную информацию {else}Информацию {/if}о цене Вы можете узнать по телефону +7 (919) 061-44-80 или по электронной почте <a href="mailto:Prof.Systema@mail.ru"><span class='mail_to'>Prof.Systema@mail.ru</span></a>
 		</div>
 		<div class="card-description">
 			<div class="size-and-price-h">Описание товара:</div>

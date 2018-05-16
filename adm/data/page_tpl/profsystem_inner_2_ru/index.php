@@ -50,11 +50,13 @@
 				{literal}<?endif;?>{/literal}
 			{/if}
 			{$areas.inner_body_1}
+			{$areas.inner_body_5}
 		</div>
 	</section>
 	<section>
 		<div class="yamap-container">
 			{$areas.inner_body_2}
+			{$areas.inner_body_6}
 			<div  class="feedback-container">
 				{$areas.body}
 				<div class="triangle"></div>

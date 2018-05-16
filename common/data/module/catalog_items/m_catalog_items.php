@@ -110,7 +110,7 @@ class m_catalog_items extends module
 		if ( !$catalog_items_count ) return;
 		
 		$limit_str = ''; $items_per_page = max( intval( $this -> view_param['items_per_page'] ), 1 );
-		
+		/*print_r($this -> env);*/
 		
 		if ( $catalog_items_count > $items_per_page )
 		{

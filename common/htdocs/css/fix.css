@@ -389,6 +389,7 @@ ul.bottom-menu li{
 #katalog-s td{
 	vertical-align: top;
 	border: 1px solid #fff;
+padding: 10px;
 }
 #katalog-s td img{
 	width: 98%
