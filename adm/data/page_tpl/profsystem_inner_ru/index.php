@@ -1,8 +1,9 @@
 {$header}
-<html>
+<html class="version_{$page.VERSION}">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="/common/img/profsystem_style/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="{$keywords}">
     <meta name="description" content="{$description}">
 	<title>{$title}</title>
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/styles.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/common/css/fix.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/common/css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="/common/css/adaptive.css" media="all">
 	<script type="text/javascript" src="/common/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/common/js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="/common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>

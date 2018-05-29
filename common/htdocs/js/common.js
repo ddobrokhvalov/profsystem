@@ -156,6 +156,7 @@ $('.card-img-prev').click(function() {
 $('.card-img-s img').click(function(){
 	var src = $(this).attr('src');
 	$('.card-img-b img').attr('src',src);
+	$('.card-img-b').css("background-image", "url("+src+")");
 	$('a#fancy_image').attr('href',src);
 });
 $("a#fancy_image").fancybox();
