@@ -969,6 +969,9 @@
 	.version_0 .call_order_form .call_order_form_captcha input[type='text']{
 		width: 325px;
 	}
+	.version_0 #header .contacts{
+		display: inline-block;
+	}
 }
 @media screen and (max-width: 375px){
 	.version_0 .call_order_form{
@@ -996,6 +999,12 @@
 	.version_0 .contacts-big__text_b{
 		font-size: 13px;
 	}
+	.version_0 #header .contacts{
+		display: block;
+		margin: 0 auto 10px;
+		width: max-content !important;
+	}
+
 }
 /**
 *TODO
