@@ -73,6 +73,7 @@ $app_objects=array(
 			"ANNOUNCE"=>	array("title"=>"lang_news_announce", "type"=>"textarea", "editor"=>1, "rows" => 5 ),
 			"IMG"		=>	array('title'=>'Главное изображение', 'type'=>'img','show'=>1, 'upload_dir' => 'upload/news_img', "errors" => _nonempty_ ),
 			"BODY"=>		array("title"=>"lang_text", "type"=>"textarea", "editor"=>1, "rows" => 15, "errors" => _nonempty_ ),
+             "ARTICLES_ORDER"=>		array("title"=>"Порядок сортировки", "type"=>"order", "show"=>1, "sort"=>"desc", "errors" => _nonempty_ ),
 		),
 	),
 	

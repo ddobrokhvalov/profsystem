@@ -102,7 +102,7 @@ class m_articles extends module
 		// Получаем содержимое ленты статей
 		$query_ARTICLES = $this -> get_module_sql(
 			$this -> module_table.'.*, IF2.INF_BLOCK_ID', $filter_str,
-			'order by ARTICLES_ID '.( $this -> view_param['sort_order'] == 'asc' ? 'asc' : 'desc' ),
+			'order by ARTICLES_ORDER '.( $this -> view_param['sort_order'] == 'asc' ? 'asc' : 'desc' ).", ARTICLES_ID ".( $this -> view_param['sort_order'] == 'asc' ? 'asc' : 'desc' ),
 			$limit_str );
 		$content_ARTICLES = db::sql_select( $query_ARTICLES, $this -> get_module_binds() + $filter_arr );
 		
